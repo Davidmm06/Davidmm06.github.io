@@ -249,10 +249,13 @@ function imprimir(array1){
 function ejecutar(){
     array1 = codificar(input);
     imprimir( array1);
-    alert("Tu menmsaje codificado es: "+output);
+    // alert("Tu menmsaje codificado es: "+output);
+    document.getElementsByClassName("input")[0].value = output;
+
 }
 function ejecutar2(){
     decodificar(input);    
     console.log(output);
-    alert("El mensaje es: " + output);
+    // alert("El mensaje es: " + output);
+    document.getElementsByClassName("input")[0].value = output;
 }
