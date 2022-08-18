@@ -38,6 +38,7 @@
     text-align: center;
     border: none;
     border-radius: 1rem;
+    max-width: 15rem;
 
     &:hover {
         background-color: darken($bgColor, 10);

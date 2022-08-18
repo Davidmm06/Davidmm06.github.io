@@ -38,6 +38,21 @@
             color: v.$negro;
         }                    
     }
+    .oracle-one{
+        display: flex;
+        position: relative;
+        justify-content: space-around;
+        width: 40%;
+        max-height: 6rem;
+        margin-top: 3rem;
+        // background-color: red;
+
+        .oracle-one-codificar{
+            @include m.boton(v.$blanco);
+            color: v.$negro;            
+        }     
+        .oracle-one-decodificar {@include m.boton(v.$negro);}
+    }
 }
 .input__label--hoshi::before,
 .input__label--hoshi::after {
