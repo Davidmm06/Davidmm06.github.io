@@ -124,18 +124,12 @@ function codificar(input){
                 array1[i]=array1[i].charCodeAt(0);
             }
         }
-        // else {
-        //     array1[i]=String(array1[i])+',';
-        //     alert(array1[i]);
-        // }
     }
     array1.unshift(longitud);
 
     arraytemp=arraytemp.filter(el => el != null);
     array1=array1.concat(arraytemp);
     output = array1.join(",");/////////////////////////////////////////////////////////elige separador
-    console.log("vector unido: ", array1);
-    // console.log("el mensaje es: "+output);
     return array1;
 }
 
@@ -152,7 +146,6 @@ function decodificar(input){
         for(var n=0; n<longitudtemp; n++){
             if(i===arraytemp[n]){
                 array1[i]=String.fromCharCode(array1[i]);
-                console.log("letra", array1[i]);
             }
         }
         if(array1[i] === 1)
@@ -232,21 +225,19 @@ function decodificar2(array1, arraytemp){
     return array1;
 }
 
-function imprimir(array1){
-    console.log('valor de entrada', input.value);
-    console.log("vector codificado", array1);
-    console.log("Tu mensaje codificado es ", output);
-}
+// function imprimir(array1){
+//     console.log('valor de entrada', input.value);
+//     console.log("vector codificado", array1);
+//     console.log("Tu mensaje codificado es ", output);
+// }
 function ejecutar(){
     array1 = codificar(input);
-    imprimir( array1);
-    // alert("Tu menmsaje codificado es: "+output);
+    // imprimir( array1);
     document.getElementsByClassName("input")[0].value = output;
 
 }
 function ejecutar2(){
     decodificar(input);    
-    console.log(output);
-    // alert("El mensaje es: " + output);
+    // console.log(output);
     document.getElementsByClassName("input")[0].value = output;
 }
