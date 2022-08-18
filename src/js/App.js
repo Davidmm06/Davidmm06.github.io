@@ -244,7 +244,7 @@ function decodificar2(array1, arraytemp){
 function imprimir(array1){
     console.log('valor de entrada', input.value);
     console.log("vector codificado", array1);
-    console.log("Tu menmsaje codificado es ", output);
+    console.log("Tu mensaje codificado es ", output);
 }
 function ejecutar(){
     array1 = codificar(input);
