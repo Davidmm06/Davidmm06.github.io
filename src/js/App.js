@@ -14,3 +14,4 @@ input.addEventListener('keypress', function (e){
 var codificarbtn = document.querySelector(".codificar");
 codificarbtn.onclick= ejecutar;
 document.querySelector(".decodificar").onclick = ejecutar2;
+//Hola//
