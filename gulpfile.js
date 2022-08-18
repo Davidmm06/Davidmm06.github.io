@@ -24,7 +24,7 @@ function css( done ) {
         .pipe( sass() ) // Compilarlo
         .pipe( postcss([ autoprefixer(), cssnano() ]) )
         .pipe(sourcemaps.write('.'))
-        .pipe( dest('build/css') ) // Almacenarla en el disco duro
+        .pipe( dest('css') ) // Almacenarla en el disco duro
     done();
 }
 
@@ -63,7 +63,7 @@ function javascript( done ) {
         .pipe(sourcemaps.init())
         .pipe( terser() )
         .pipe(sourcemaps.write('.'))
-        .pipe(dest('build/js'));
+        .pipe(dest('js'));
 
     done();
 }
