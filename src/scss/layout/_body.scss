@@ -2,7 +2,7 @@
 @use 'base/mixins' as m;
 
 body{
-    background: url(../img/code-1.jpg);
+    background: url(/build/img/code-1.jpg);
 	// background-position: center center;
 	background-attachment: cover;
 	background-size: cover;
