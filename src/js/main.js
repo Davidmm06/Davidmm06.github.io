@@ -147,11 +147,6 @@ function decodificar(input){
     var arraytemp = array1.slice(longitud, longitudtotal);
     var longitudtemp= arraytemp.length;
     var array1 = array1.slice(0,longitud);
-    console.log("array1", array1);
-    console.log("arraytemp", arraytemp);
-    console.log("longitud", longitud);
-    console.log("longitudtotal", longitudtotal);
-    console.log("longitudtemp", longitudtemp);
 
     for(var i=0; i<longitud; i++){
         for(var n=0; n<longitudtemp; n++){
@@ -191,19 +186,16 @@ function decodificar(input){
     }
     array1.reverse();
     output = array1.join("");
-    console.log("vector decodificado", array1);
     return array1;
 }
 
 function decodificar2(array1, arraytemp){
     var longitud = array1.length;
     var longitudtemp = arraytemp.length;
-    console.log("longitud", longitud);
     for(var i=0; i<longitud; i++){
         for(var n=0; n<longitudtemp; n++){
             if(i===arraytemp[n]){
                 array1[i]=String.fromCharCode(array1[i]);
-                console.log("letra", array1[i]);
             }
         }
         if(array1[i] === 1)
@@ -237,7 +229,6 @@ function decodificar2(array1, arraytemp){
     }
     array1.reverse();
     output = array1.join("");
-    console.log("vector decodificado", array1);
     return array1;
 }
 
